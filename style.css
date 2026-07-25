@@ -423,6 +423,27 @@ details[open] .detail__summary-icon::after {
   line-height: 1.75;
 }
 
+.detail__steps {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.detail__step-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.detail__step p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.detail__step p + p {
+  margin-top: var(--space-xs);
+}
+
 .detail__list {
   display: grid;
   gap: var(--space-xs);
