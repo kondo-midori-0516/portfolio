@@ -428,6 +428,11 @@ details[open] .detail__summary-icon::after {
   gap: var(--space-md);
 }
 
+.detail__prose {
+  display: grid;
+  gap: var(--space-xs);
+}
+
 .detail__step-title {
   font-size: 0.9rem;
   font-weight: 600;
