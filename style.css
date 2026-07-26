@@ -425,7 +425,7 @@ details[open] .detail__summary-icon::after {
 
 .detail__steps {
   display: grid;
-  gap: var(--space-md);
+  gap: 2.5rem;
 }
 
 .detail__prose {
@@ -436,7 +436,7 @@ details[open] .detail__summary-icon::after {
 .detail__step-title {
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
 }
 
 .detail__step p {
@@ -447,6 +447,27 @@ details[open] .detail__summary-icon::after {
 
 .detail__step p + p {
   margin-top: var(--space-xs);
+}
+
+.detail__step-dl {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  gap: var(--space-xs) 0.6em;
+  margin: 0;
+}
+
+.detail__step-dl dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding-top: 0.15em;
+}
+
+.detail__step-dl dd {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--color-text);
 }
 
 .detail__list {
@@ -595,6 +616,15 @@ details[open] .detail__summary-icon::after {
   .detail__label {
     padding-top: 0;
     margin-bottom: calc(var(--space-xs) * -0.5);
+  }
+
+  .detail__step-dl {
+    grid-template-columns: 1fr;
+    gap: 0.15em var(--space-sm);
+  }
+
+  .detail__step-dl dt {
+    padding-top: 0;
   }
 
   .detail__summary {
